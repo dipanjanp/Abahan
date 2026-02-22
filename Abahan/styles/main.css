@@ -523,7 +523,7 @@ html[data-theme="night"] .panel {
 }
 
 .panel-body {
-	padding: 0 18px 18px;
+	padding: 0 18px 30px;
 }
 
 .cards {
@@ -618,11 +618,11 @@ html[data-theme="night"] .card {
 .tabs {
 	display: flex;
 	gap: 0;
-	padding: 10px 12px;
-	background: var(--tab-bg);
+	padding: 30px 12px 20px;
+/* 	background: var(--tab-bg); */
 	border-top: 1px solid var(--tab-border);
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .tabset {
