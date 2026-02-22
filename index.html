@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-mode="auto">
+<html lang="en" data-theme="day">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,8 +21,8 @@
 						<img src="assets/logo-abahanbayarea-sm.jpg" alt="Abahan" class="logo"> 
 						<img src="assets/logo.png" alt="Abahan" class="title"> 
 					</div>
-					<div class="nav-end">
-						<nav class="links" aria-label="Main navigation">
+						<div class="nav-end">
+							<nav id="mainNavLinks" class="links" aria-label="Main navigation">
 							<a href="#">Home</a>
 							<a class="active" href="#">Schedule</a>
 							<a href="#">Venue & Directions</a>
@@ -30,9 +30,9 @@
 							<a href="#">Contact</a>
 						</nav>
 						<div class="nav-right">
-							<button id="themeToggle" class="icon-btn" aria-label="Toggle dark/light mode"><i class="fa-solid fa-moon"></i></button>
-							<button class="icon-btn" title="Menu" aria-label="Menu" style="display:none;"><i class="fa-solid fa-bars"></i></button>
-							<button class="icon-btn" title="Search" aria-label="Search" style="display:none;"><i class="fa-solid fa-magnifying-glass"></i></button>
+								<button id="themeToggle" class="icon-btn" aria-label="Toggle dark/light mode" hidden><i class="fa-solid fa-moon"></i></button>
+								<button class="icon-btn menu-btn" type="button" title="Menu" aria-label="Menu" aria-controls="mainNavLinks" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+								<button class="icon-btn search-btn" title="Search" aria-label="Search" hidden><i class="fa-solid fa-magnifying-glass"></i></button>
 						</div>
 					</div>
 				</div>

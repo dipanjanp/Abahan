@@ -1,30 +1,36 @@
-// ------------------------------------------------------------
-// Theme: Toggle (Day/Night)
-// - data-theme: actual applied (day/night)
-// ------------------------------------------------------------
+// Force light theme for now.
+document.documentElement.setAttribute("data-theme", "day");
 
-const html = document.documentElement;
-const THEME_KEY = "abahan_theme_mode"; // day | night
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.getElementById("mainNavLinks");
+const mobileQuery = window.matchMedia("(max-width: 980px)");
 
-const btn = document.getElementById("themeToggle");
-const icon = btn.querySelector("i");
-
-function apply(theme) {
-	html.setAttribute("data-theme", theme);
-	localStorage.setItem(THEME_KEY, theme);
-	icon.className = theme === "night" ? "fa-solid fa-sun" : "fa-solid fa-moon";
-	btn.setAttribute("aria-label", theme === "night" ? "Switch to light mode" : "Switch to dark mode");
+function closeMenu() {
+	if (!menuBtn || !navLinks) return;
+	navLinks.classList.remove("menu-open");
+	menuBtn.setAttribute("aria-expanded", "false");
 }
 
-function inferTheme() {
-	const hour = new Date().getHours();
-	return (hour >= 7 && hour < 18) ? "day" : "night";
+if (menuBtn && navLinks) {
+	menuBtn.addEventListener("click", () => {
+		const nextOpen = !navLinks.classList.contains("menu-open");
+		navLinks.classList.toggle("menu-open", nextOpen);
+		menuBtn.setAttribute("aria-expanded", String(nextOpen));
+	});
+
+	document.addEventListener("click", (event) => {
+		if (!mobileQuery.matches) return;
+		const target = event.target;
+		if (!(target instanceof Element)) return;
+		if (menuBtn.contains(target) || navLinks.contains(target)) return;
+		closeMenu();
+	});
+
+	navLinks.querySelectorAll("a").forEach((link) => {
+		link.addEventListener("click", closeMenu);
+	});
+
+	mobileQuery.addEventListener("change", () => {
+		if (!mobileQuery.matches) closeMenu();
+	});
 }
-
-// Init from saved preference, fall back to time-based
-const saved = localStorage.getItem(THEME_KEY);
-apply(saved || inferTheme());
-
-btn.addEventListener("click", () => {
-	apply(html.getAttribute("data-theme") === "night" ? "day" : "night");
-});
