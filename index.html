@@ -126,20 +126,22 @@
 										<h3>Cultural Program</h3>
 									</div>
 									<p>Local Performances<br/>Music & Dance</p>
-									<a class="mini-btn alt" href="#">Participate</a>
+									<a class="mini-btn" href="#">Participate</a>
 								</div>
 							</div>
 						</div>
 
 				</div>
 				<hr class="wash" />
-				<section class="community">
-					<div class="community-inner">
+					<section class="community">
+						<div class="community-inner">
 						<div class="badge">Founding Year • 2026</div>
 						<h2>New Pujo, Same Emotion</h2>
 						<p>
 							We may be new, but the feeling is the same: <strong>dhak, devotion, adda</strong>, and the warmth of coming home.
-							This is Abahan’s first year organizing Durga Puja in the Bay Area. Join us and help shape a tradition that grows for years to come.
+							This is Abahan’s first year organizing Durga Puja in the Bay Area. Join us and help shape a tradition that grows for years to come. <br/>Abahan Bay Area is dedicated to preserving the rich heritage of Hindu traditions in San Francisco Bay Area. Our mission is to bring families together through the sacred observance of Durga Puja.
+
+We have been the spiritual home for Bengali families seeking an authentic Puja experience for years, fostering cultural bonds and celebrating with devotion.
 						</p>
 							<div class="community-cards">
 								<div class="community-card">
@@ -167,10 +169,109 @@
 									<a class="mini-btn community-btn" href="#">Donate</a>
 								</div>
 							</div>
+						</div>
+					</section>
+				</div>
+			</section>
+			<hr class="wash" />
+			<section class="gallery-section" aria-labelledby="galleryTitle">
+				<div class="container">
+						<div class="panel gallery-panel">
+							<div class="panel-head">
+							<p class="panel-eyebrow">স্মৃতির অ্যালবাম • উৎসবের ঝলক</p>
+							<h2 id="galleryTitle" class="panel-title">Photo Gallery</h2>
+						</div>
+							<div class="gallery-marquee" aria-label="Moving photo gallery">
+								<div class="gallery-track" id="galleryTrack"></div>
+							</div>
+						</div>
+					</div>
+			</section>
+
+				<section class="heritage" aria-labelledby="heritageTitle">
+					<div class="container">
+						<div class="panel heritage-panel">
+							<div class="panel-head">
+								<p class="panel-eyebrow">স্মৃতির পাতায় • কিছু মুহূর্ত</p>
+								<h2 id="heritageTitle" class="panel-title">Past Celebrations</h2>
+							</div>
+							<div class="heritage-body">
+								<div class="celebration-list">
+									<article class="celebration-card">
+										<img src="assets/abahan.jpg" alt="Saraswati Puja 2025 celebration artwork" class="celebration-image" />
+										<div class="celebration-copy">
+											<h3>Saraswati Puja 2025</h3>
+											<p>
+												A beautiful celebration of the goddess of knowledge with over 500 attendees.
+												Children brought books for blessings, followed by soulful musical performances.
+											</p>
+											<a class="mini-btn heritage-btn" href="#">View Memories</a>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
 					</div>
 				</section>
-			</div>
-		</section>
-	</body>
-	<script src="scripts/main.js?v=__BUILD_SHA__"></script>
-</html>
+
+				<section class="contact-section" aria-labelledby="contactTitle">
+					<div class="container">
+						<div class="panel contact-panel">
+							<div class="panel-head contact-head">
+								<p class="panel-eyebrow">যোগাযোগ • Connect</p>
+								<h2 id="contactTitle" class="panel-title">Get In Touch</h2>
+							</div>
+							<div class="contact-body">
+								<div class="contact-grid">
+									<a class="contact-item" href="mailto:hello@abahanbayarea.org">
+										<span class="contact-ico"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+										<div>
+											<p class="contact-label">Email</p>
+											<p class="contact-value">info@abahanbayarea.org</p>
+										</div>
+									</a>
+									<a class="contact-item" href="tel:+15105551234">
+										<span class="contact-ico"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+										<div>
+											<p class="contact-label">Phone</p>
+											<p class="contact-value">+1 (408) 555-1234</p>
+										</div>
+									</a>
+									<div class="contact-item">
+										<span class="contact-ico"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+										<div>
+											<p class="contact-label">Location</p>
+											<p class="contact-value">Bay Area, California</p>
+										</div>
+									</div>
+								</div>
+								<div class="social-links" aria-label="Social links">
+									<a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+									<a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+									<a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<footer class="site-footer">
+					<div class="container">
+						<p>&copy; 2026 Abahan Bay Area. All rights reserved.</p>
+					</div>
+				</footer>
+
+				<div class="gallery-modal" id="galleryModal" hidden>
+					<div class="gallery-modal-backdrop" data-gallery-close></div>
+					<figure class="gallery-modal-content">
+						<button class="gallery-modal-close" type="button" aria-label="Close image preview" data-gallery-close>
+							<i class="fa-solid fa-xmark" aria-hidden="true"></i>
+						</button>
+						<img id="galleryModalImage" src="" alt="" />
+						<figcaption id="galleryModalCaption"></figcaption>
+					</figure>
+				</div>
+		</body>
+		<script src="data/gallery-images.js?v=__BUILD_SHA__"></script>
+		<script src="scripts/main.js?v=__BUILD_SHA__"></script>
+	</html>
