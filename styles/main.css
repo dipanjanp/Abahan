@@ -790,7 +790,8 @@ html[data-theme="night"] .card {
 .community p {
 	margin: 0 auto;
 	max-width: 78ch;
-	color: var(--muted);
+/* 	color: var(--muted); */
+	color: var(--sindoor);
 	font-size: 16.5px;
 	line-height: 1.65;
 	font-weight: 500;
@@ -986,9 +987,12 @@ html[data-theme="night"] .community-card {
 		grid-template-columns: 1fr;
 	}
 
-	html[data-theme="night"] .community p {
+/* 
+	.community p {
 		font-weight: 500;
+		line-height: 1.2;
 	}
+ */
 
 	.community-btn {
 		width: 100%;
