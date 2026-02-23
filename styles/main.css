@@ -793,11 +793,7 @@ html[data-theme="night"] .card {
 	color: var(--muted);
 	font-size: 16.5px;
 	line-height: 1.65;
-	text-shadow: 0 1px 1px rgba(255, 255, 255, .26);
-}
-
-html[data-theme="night"] .community p {
-	text-shadow: 0 1px 2px rgba(0, 0, 0, .36);
+	font-weight: 500;
 }
 
 .badge {
