@@ -787,6 +787,7 @@ html[data-theme="night"] .card {
 	color: var(--muted);
 	font-size: 16.5px;
 	line-height: 1.65;
+	text-shadow: 0 0 var(--muted);
 }
 
 .badge {
@@ -806,7 +807,7 @@ html[data-theme="night"] .card {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 14px;
-	margin-top: 18px;
+	margin-top: 36px;
 	text-align: left;
 }
 
@@ -1172,7 +1173,7 @@ html[data-theme="night"] .pill-chip.accent {
 }
 
 .gallery-section {
-	padding: 0 0 24px;
+/* 	padding: 0 0 24px; */
 }
 
 .gallery-panel {
@@ -1241,7 +1242,7 @@ html[data-theme="night"] .pill-chip.accent {
 
 .heritage {
 	background: transparent;
-	padding: 16px 0;
+	padding: 0 0 16px;
 }
 
 .heritage-panel {
@@ -1320,11 +1321,11 @@ html[data-theme="night"] .celebration-card {
 
 @media (max-width: 980px) {
 	.gallery-section {
-		padding: 20px 0 10px;
+/* 		padding: 0 0 10px; */
 	}
 
 	.heritage {
-		padding: 12px 0 58px;
+		padding: 0 0 12px;
 	}
 
 	.gallery-marquee {
