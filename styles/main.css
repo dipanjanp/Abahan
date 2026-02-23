@@ -986,12 +986,8 @@ html[data-theme="night"] .community-card {
 		grid-template-columns: 1fr;
 	}
 
-	.community p {
-		text-shadow: 0 1px 2px rgba(255, 255, 255, .34);
-	}
-
 	html[data-theme="night"] .community p {
-		text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+		font-weight: 500;
 	}
 
 	.community-btn {
