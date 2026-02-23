@@ -442,7 +442,7 @@ html[data-theme="night"] .hero::before{
 	gap: 10px;
 	align-items: center;
 	justify-content: center;
-	color: var(--muted2);
+	color: var(--sindoor);
 	font-size: 22px;
 	margin-bottom: 10px;
 }
@@ -1288,7 +1288,7 @@ html[data-theme="night"] .pill-chip.accent {
 .celebration-copy h3 {
 	margin: 0;
 	font-family: var(--font-h);
-	font-size: 30px;
+	font-size: 23px;
 	color: color-mix(in oklab, var(--text) 90%, var(--sindoor) 10%);
 }
 
