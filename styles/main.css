@@ -23,6 +23,7 @@
 
 	--container: 1040px;
 	--gutter: 24px;
+	--anchor-offset: 50px;
 
 	--t: 260ms;
 
@@ -160,10 +161,15 @@ html[data-theme="night"] {
 html {
 	background: transparent;
 	color: var(--text);
+	scroll-padding-top: var(--anchor-offset);
 }
 
 * {
 	box-sizing: border-box;
+}
+
+[id] {
+	scroll-margin-top: var(--anchor-offset);
 }
 
 a, button, [role="button"], [tabindex] {
@@ -1424,7 +1430,7 @@ html[data-theme="night"] .celebration-card {
 }
 
 .social-links {
-	margin-top: 16px;
+	margin-top: 24px;
 	display: flex;
 	gap: 10px;
 	justify-content: center;
