@@ -434,6 +434,49 @@ html[data-theme="night"] .hero::before{
 .hero-title {
 	text-align: center;
 	padding: 6px 0;
+	color: #7a1f1f; /* deep maroon */
+	text-align: center;
+	line-height: 1.2;
+	margin: 0;
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+	.title-main {
+		display: block;
+		font-size: 42px;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+	}	
+	.title-sub {
+		display: block;
+		font-size: 22px;
+		font-weight: 500;
+		margin-top: 6px;
+	}
+}
+
+@media (min-width: 769px) {
+	.title-main::after {
+		content: " · ";
+		font-weight: 400;
+	}
+	
+	.title-main,
+	.title-sub {
+		display: inline;
+	}
+}
+.title-main {
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.title-sub {
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .bnline {
@@ -670,7 +713,8 @@ html[data-theme="night"] .card {
 }
 
 .mini-btn {
-	margin-top: 14px;
+/* 	margin-top: 14px; */
+	margin-top: 28px;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -876,6 +920,7 @@ html[data-theme="night"] .community-card {
 	line-height: 1.6;
 	font-size: 13.5px;
 	flex: 1;
+	font-weight: 300;
 }
 
 .community-btn {
@@ -1045,11 +1090,16 @@ html[data-theme="night"] .community-card {
 	padding: 10px 14px;
 	min-width: 210px;
 	border-radius: 14px;
+/* 
 	border: 1px solid var(--pill-border);
 	background:
 		linear-gradient(180deg, rgba(255, 255, 255, .66), rgba(255, 255, 255, .34));
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .45), 0 8px 20px rgba(0, 0, 0, .07);
+ */
 	color: var(--text);
+	
+	border: 1px solid rgba(166, 58, 43, .15);
+    background: linear-gradient(180deg, rgba(255, 249, 239, .74), rgba(255, 242, 222, .62));
 }
 
 .pill-chip i {
@@ -1309,7 +1359,7 @@ html[data-theme="night"] .pill-chip.accent {
 }
 
 .heritage-btn {
-	margin-top: 18px;
+	margin-top: 28px;
 }
 
 html[data-theme="night"] .gallery-item {
